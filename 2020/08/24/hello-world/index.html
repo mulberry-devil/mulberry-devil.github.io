@@ -29,7 +29,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: linear-gradient(200deg,#ccc,#000);
     }
   </style>
   
@@ -67,10 +67,6 @@
     		
     			
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
-    			
-            
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -154,13 +150,13 @@
   <div class="article-inner">
     
       <header class="article-header">
-        
+        <!-- 
   
     <h1 class="article-title" itemprop="name">
       Hello World
     </h1>
   
-
+ -->
         
         <a href="/2020/08/24/hello-world/" class="archive-article-date">
   	<time datetime="2020-08-24T10:10:48.582Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-24</time>
@@ -169,6 +165,13 @@
       </header>
     
     <div class="article-entry" itemprop="articleBody">
+      <center><p>
+  
+    <h1 class="article-title_code_ant" itemprop="name">
+      Hello World
+    </h1>
+  
+</p></p></center>
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -184,6 +187,36 @@
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
+      
+
+      
+      
+      
+        <div>
+        <blockquote>
+          <strong>本文作者：</strong>
+          
+            JoJo仕
+          
+          <br>
+          <strong>本文链接：</strong>
+          https://mulberry-devil.github.io/2020/08/24/hello-world/
+          <br>
+          <strong>版权声明：</strong>
+          本作品采用
+          <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+          进行许可。转载请注明出处！
+          
+            <br>
+            <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+          
+        </blockquote>
+        
+        
+        <hr>
+          <center><strong>感谢有你，伴我成长。</strong></center>
+        <hr>
+        </div>
       
 
       
@@ -327,9 +360,7 @@
     	<div class="footer-left">
     		&copy; 2020 JoJo仕
     	</div>
-      	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
+      	<div class="footer-right"></div>
     </div>
   </div>
 </footer>
@@ -369,25 +400,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -455,43 +478,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap">
+				<div style="display:;">
+					<script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script>
+					<p style="margin:0 20px 0 20px;">
+						<span id="lwlhitokoto">
+							<script>
+								lwlhitokoto();
+							</script>
+						</span>
+					</p>
+					<p id="js-aboutme" style="margin:0 20px 0 20px;">感谢浏览&lt;br&gt;&lt;br&gt;即将踏入社会的纯正小白&lt;br&gt;江湖再见</P>
+				</div>
+			</div>
   	  	
     	</section>
     
