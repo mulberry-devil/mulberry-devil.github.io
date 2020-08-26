@@ -200,56 +200,10 @@
 </li>
 <li><p>取消暂存区中某文件</p>
   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset HEAD 文件名</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>回退本地仓库版本</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset --hard 提交id</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看提交历史（配合回退版本使用）</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span></span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
-<hr>
-<h2 id="Git远程库命令操作"><a href="#Git远程库命令操作" class="headerlink" title="Git远程库命令操作"></a>Git远程库命令操作</h2><ul>
-<li><p>将本地库与远程库关联起来</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin 远程库链接</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将本地库内容推送到远程库中</p>
-<p>  <strong>（也可将其他分支推送到远程库中）</strong></p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将远程库内容克隆到本地</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> 远程库链接</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<hr>
-<h2 id="Git分支命令操作"><a href="#Git分支命令操作" class="headerlink" title="Git分支命令操作"></a>Git分支命令操作</h2><ul>
-<li><p>查看分支</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch</span><br><span class="line"><span class="comment"># *代表当前所使用的分支</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建分支</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch 分支名</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>切换分支</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git switch 分支名</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建并切换分支</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git switch -c 分支名</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>合并某分支到当前分支</p>
-<p>  <strong>（最后一般为切换到master分支，合并其他到master）</strong></p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 默认为fast forward模式合并分支，合并后删除分支时会丢掉分支信息</span></span><br><span class="line">$ git merge 分支名</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以下使用的是普通模式合并，Git会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息</span></span><br><span class="line">$ git merge --no-ff -m <span class="string">&quot;描述信息&quot;</span> 分支名</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除分支</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch -d 分支名</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<hr>
-<p>以上为我个人总结笔记，如若有误，请见谅</p>
-<hr>
-
+        
       
 
       
